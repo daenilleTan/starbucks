@@ -117,6 +117,8 @@
   background-color: #4a3228;
 }
 
+<head>
+  <style>
     /* your existing CSS here... */
 
     .product-card {
@@ -160,7 +162,22 @@
     max-width: 300px;
   }
 
-  
+  .navbar {
+    flex-direction: column;
+    align-items: flex-start;
+    padding: 10px;
+  }
+
+  .nav-left, .nav-right {
+    flex-direction: column;
+    width: 100%;
+    align-items: flex-start;
+  }
+
+  .nav-left li, .nav-right li {
+    padding: 10px 0;
+  }
+}
 
 /* --- Responsive Web Design Additions --- */
 
@@ -206,6 +223,26 @@
     max-width: 320px;
   }
 
+  .navbar {
+    flex-direction: column;
+    padding: 10px;
+  }
+
+  .nav-left, .nav-right {
+    flex-direction: column;
+    align-items: flex-start;
+    width: 100%;
+  }
+
+  .nav-left li, .nav-right li {
+    padding: 10px 0;
+  }
+
+  .logo-img {
+    max-width: 150px;
+    height: auto;
+  }
+}
 
 /* Extra small screens (phones) */
 @media (max-width: 480px) {
@@ -230,13 +267,19 @@
     font-size: 13px;
   }
 
-
+  .navbar {
+    font-size: 14px;
+  }
 }
 
 
   </style>
 </head>
 
+
+</style>
+
+</head>
 <body>
 
 <ul class="navbar">
